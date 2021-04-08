@@ -34,23 +34,25 @@ public class test {
     @Test
     public void test02(){//二分查找。前提，查找的数组必须有序
         int[] arr = new int[]{-123,-95,-31,0,21,44};
-        int a1 = -95;//需要查找的元素
-        int start =0;//定义首索引
-        int end=arr.length-1;//定义末索引
-        boolean ifFlag=true;//是否找到元素
-        while (start<=end){
-            int middle =(start+end)/2;//中间索引
-            if(arr[middle]>a1){
-                end=middle-1;
-            }else if(arr[middle]<a1){
-                start=middle+1;
-            }else {
-                ifFlag=false;
-                System.out.println("找到元素，位置索引为:"+middle);
+        int a1=22;//要查找的元素
+        int head=0;//首索引
+        int end=arr.length-1;//末位索引
+        boolean ifExist=true;//是否查找到
+        while(head<=end){
+            int middle=(head+end)/2;//中间，java中5/2=2
+            if(a1==arr[middle]){
+                ifExist=false;
+                System.out.println("找到元素，索引为："+middle);
+                break;//结束查找
+            }else if(a1<arr[middle]){
+                end=middle-1;//末位数 改为中间值 前一个
+            }else if(a1>arr[middle]){
+                head=middle+1;//首位数 改为中间值后一个
             }
         }
-        if(ifFlag){
-            System.out.println("不好意思，未找到元素");
+        if(ifExist){
+            System.out.println("未找到元素");
         }
+
     }
 }

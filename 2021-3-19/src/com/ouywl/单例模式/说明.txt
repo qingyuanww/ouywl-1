@@ -1,0 +1,13 @@
+懒汉式和饿汉式的区别
+
+1、懒汉式：延时加载类的对象，线程不安全
+
+2、饿汉式：类加载就创建了对象，是线程安全的
+
+    静态代码块只有再初始化 的时候才会执行
+
+
+
+
+    https://blog.csdn.net/jiese1990/article/details/40154329?utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control&dist_request_id=&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control
+    https://blog.csdn.net/xuefeng0707/article/details/9132339
