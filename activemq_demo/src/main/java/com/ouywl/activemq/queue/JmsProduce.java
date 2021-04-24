@@ -29,7 +29,7 @@ public class JmsProduce {
         //5、创建消息的 生产者
         MessageProducer producer = session.createProducer(queue);
         //6、发送消息 三条消息
-        for (int i = 0; i <3 ; i++) {
+        for (int i = 0; i <9 ; i++) {
             //7、创建消息，好比学生们按照老师的要求 写好的面试题消息
             TextMessage message = session.createTextMessage("msg-" + i);
             //8、通过消息生产者发布

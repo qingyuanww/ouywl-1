@@ -15,6 +15,7 @@ public class JmsConsumer {
     public static final String DEFAULT_BROKER_URL="tcp://192.168.22.128:61616";//虚拟机的ip
     public static final String QUEUE="queue01";//队列名
     public static void main(String[] args) throws JMSException, IOException {
+        System.out.println("我是2号消费者");
         //brokeURL MQ的地址
         ActiveMQConnectionFactory acf = new ActiveMQConnectionFactory(DEFAULT_BROKER_URL);
         //2、通过连接工厂获得连接，并启动访问
@@ -57,5 +58,11 @@ public class JmsConsumer {
         consumer.close();
         session.close();
         con.close();
+        /**
+         * 1、先生产，只启动1号消费者
+         * 2、先生产，启动1号，再启动2号， 2号不可以消费
+         * 3、先启动1号和2号，再生产，
+         * 结果：均衡消费
+         */
     }
 }
