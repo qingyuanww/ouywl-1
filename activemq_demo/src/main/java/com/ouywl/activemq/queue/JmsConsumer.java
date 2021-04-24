@@ -52,6 +52,14 @@ public class JmsConsumer {
                         e.printStackTrace();
                     }
                 }
+                if(message!=null&&message instanceof MapMessage){
+                    MapMessage mapMessage= (MapMessage) message;
+                    try {
+                        System.out.println("MessageListener监听的消息："+mapMessage.getString("K"));
+                    } catch (JMSException e) {
+                        e.printStackTrace();
+                    }
+                }
             }
         });
         System.in.read();//这里需要让控制台不要结束，因为消息监听需要时间

@@ -32,8 +32,11 @@ public class JmsProduce {
         for (int i = 0; i <9 ; i++) {
             //7、创建消息，好比学生们按照老师的要求 写好的面试题消息
             TextMessage message = session.createTextMessage("msg-" + i);
+            MapMessage mapMessage = session.createMapMessage();
+            mapMessage.setString("K", "V"+i);
             //8、通过消息生产者发布
             producer.send(message);
+            producer.send(mapMessage);
         }
         //9、关闭资源
         producer.close();
