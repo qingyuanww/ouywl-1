@@ -5,6 +5,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>activemq_demo</module>
+        <module>spring_test</module>
+        <module>ThreadTest</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
