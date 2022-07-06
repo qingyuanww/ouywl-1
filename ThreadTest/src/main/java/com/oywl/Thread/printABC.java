@@ -51,10 +51,10 @@ class MyThreadPrint implements Runnable{
             synchronized (prev){
                 synchronized (self){
                     System.out.println(name+":print->"+count);
-                    self.notify();
+                    self.notify();//释放当前对象锁，放出CPU的控制权，随机唤醒一个等待该对象锁的线程，这里是下一个线程的锁
                 }
                 try {
-                    prev.wait();
+                    prev.wait();//释放当前对象锁，休眠当前线程，注意是当前线程
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
