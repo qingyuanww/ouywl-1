@@ -33,7 +33,7 @@ public class find_pivot_index {
             return -1;
         }
         public int pivotIndex2(int[] nums) {
-            //先计算综合，然后左边=total - num[i] - 左边 ，判断成立返回下标
+            //先计算综合，然后左边=总 - 中间值 - 左边 ，判断成立返回下标
             int left=nums[0];
             int total =0;
             for (int num : nums) {

@@ -32,10 +32,6 @@ public class isIsomorphic {
         }
         return sb.toString();
     }
-    public static void  sout(int[] nums){
-        for (int num : nums) {
-            System.out.println(num);
-        }
-    }
+
 
 }
