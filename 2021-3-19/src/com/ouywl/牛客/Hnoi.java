@@ -41,13 +41,13 @@ public class Hnoi {
          * 如何将12盘从a到c呢？
          * 借助b盘
          *
-         * a->c
+         * a->c b
          * 那么fn= f(n-1) a->b + a n ->c + f(n-1) b->c
          *
-         * a->b
+         * a->b c
          * f(n-1) =f(n-2) a-c + a (n-1)->b + f(n-2) c->b
          *
-         * b-c
+         * b-c a
          * f(n-1)= f(n-2) b-a + b (n-1)->c + f(n-2) a->c
          */
     }
@@ -55,9 +55,9 @@ public class Hnoi {
         if(n==1){
             move(a,c);
         }else {
-            t(n-1,a,c,b);
+            t(n-1,a,c,b); //a 到 b
             move(a,c);
-            t(n-1,b,a,c);
+            t(n-1,b,a,c); //b 到 c
         }
     }
     void move(String x,String y){
