@@ -9,7 +9,7 @@ package com.ouywl.牛客;
 public class Hnoi {
     static  int num =0;
     public static void main(String[] args) {
-        hanoi(4,"A","B","C");
+        hanoi(10,"A","B","C");
     }
     public static void print(int len, String x ,String y){
         System.out.println("第"+ (++num)+"次移动，把"+len+"号从"+x+"移动到"+y);
@@ -51,16 +51,5 @@ public class Hnoi {
          * f(n-1)= f(n-2) b-a + b (n-1)->c + f(n-2) a->c
          */
     }
-    void t(int n,String a,String b,String c){
-        if(n==1){
-            move(a,c);
-        }else {
-            t(n-1,a,c,b); //a 到 b
-            move(a,c);
-            t(n-1,b,a,c); //b 到 c
-        }
-    }
-    void move(String x,String y){
 
-    }
 }
