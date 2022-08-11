@@ -8,12 +8,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring_test" />
+        <module name="JVMTest" />
         <module name="ThreadTest" />
         <module name="activemq_demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="activemq_demo" target="1.8" />
+      <module name="JVMTest" target="1.8" />
       <module name="ouywl" target="1.8" />
       <module name="spring_test" target="1.8" />
       <module name="ThreadTest" target="1.8" />
@@ -21,6 +23,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="JVMTest" options="-parameters" />
       <module name="ThreadTest" options="-parameters" />
       <module name="activemq_demo" options="-parameters" />
       <module name="ouywl" options="-parameters" />
