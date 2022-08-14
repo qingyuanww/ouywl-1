@@ -52,6 +52,58 @@ public class MyClassLoader extends ClassLoader {
     }
 
 
+    /**
+     * 打破双亲委派机制,通过重写loadeClass方法，因为机制实现是在这个方法里面，重写它即可
+     * @param name
+     * @param resolve
+     * @return
+     * @throws ClassNotFoundException
+     */
+    protected Class<?> loadClass(String name, boolean resolve)
+            throws ClassNotFoundException
+    {
+        synchronized (getClassLoadingLock(name)) {
+            // First, check if the class has already been loaded
+            Class<?> c = findLoadedClass(name);
+            if (c == null) {
+                long t0 = System.nanoTime();
+//                try {
+//                    if (parent != null) {
+//                        c = parent.loadClass(name, false);
+//                    } else {
+//                        c = findBootstrapClassOrNull(name);
+//                    }
+//                } catch (ClassNotFoundException e) {
+//                    // ClassNotFoundException thrown if class not found
+//                    // from the non-null parent class loader
+//                }
+
+                if (c == null) {
+                    // If still not found, then invoke findClass in order
+                    // to find the class.
+                    long t1 = System.nanoTime();
+                    if(name.equals("com.oy.JVM.User1")){
+                        //这里是走自己的加载逻辑
+                        c = findClass(name);
+                    }else {
+                        //用父类的loadClass方法
+                        c=this.getParent().loadClass(name);
+                    }
+
+
+                    // this is the defining class loader; record the stats
+                    sun.misc.PerfCounter.getParentDelegationTime().addTime(t1 - t0);
+                    sun.misc.PerfCounter.getFindClassTime().addElapsedTimeFrom(t1);
+                    sun.misc.PerfCounter.getFindClasses().increment();
+                }
+            }
+            if (resolve) {
+                resolveClass(c);
+            }
+            return c;
+        }
+    }
+
 
     public static void main(String[] args) throws Exception {
         MyClassLoader myCladdLoader = new MyClassLoader("D:/java/testJVM");
