@@ -4,20 +4,16 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a50d76c-c341-4f6d-9810-9aaf97457d67" name="Default Changelist" comment="环形链表：双指针解法">
-      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/StreamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/future/CompletableFutureTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/isomorphic_strings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/maxProfit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JVMTest/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/TestClassLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="2a50d76c-c341-4f6d-9810-9aaf97457d67" name="Default Changelist" comment="jvm-classLoader">
+      <change afterPath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM/Math.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM/MyClassLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JVMTest/src/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/is_subsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/is_subsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/TestClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/TestClassLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activemq_demo/target/classes/META-INF/activemq_demo.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2021-3-19/com/ouywl/callableDemo/CallableTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2021-3-19/com/ouywl/callableDemo/CallableTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2021-3-19/com/ouywl/callableDemo/MyThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2021-3-19/com/ouywl/callableDemo/MyThread.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,20 +52,20 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/jre/lib/rt.jar!/sun/misc/Launcher.class" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/String.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$PROJECT_DIR$/../../../yonyou/repository2/com/yonyou/dmscloud/dmscloud.framework/3.0.114-RELEASE/dmscloud.framework-3.0.114-RELEASE-sources.jar!/com/yonyou/dmscloud/framework/interceptors/ExceptionControllerAdvice.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Class.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/time/format/DateTimeFormatter.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/math/BigDecimal.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../yonyou/repository2/com/yonyou/dmscloud/dmscloud.function/1.0.0/dmscloud.function-1.0.0.jar!/com/yonyou/dmscloud/function/exception/AuthForbiddenException.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Math.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/util/concurrent/CyclicBarrier.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/util/concurrent/TimeUnit.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/util/concurrent/atomic/LongAdder.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/util/Objects.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../yonyou/repository2/com/yonyou/dmscloud/dmscloud.function/1.0.0/dmscloud.function-1.0.0.jar!/com/yonyou/dmscloud/function/exception/ServiceBizException.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/util/concurrent/atomic/LongAdder.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/math/BigDecimal.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../yonyou/repository2/cn/hutool/hutool-all/5.4.0/hutool-all-5.4.0.jar!/cn/hutool/core/date/DateUnit.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Math.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Class.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/String.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../../yonyou/repository2/com/yonyou/dmscloud/dmscloud.framework/3.0.114-RELEASE/dmscloud.framework-3.0.114-RELEASE-sources.jar!/com/yonyou/dmscloud/framework/interceptors/ExceptionControllerAdvice.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/time/format/DateTimeFormatter.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/util/Objects.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/jre/lib/rt.jar!/sun/misc/Launcher.class" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -125,14 +121,30 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\import\ouywl\activemq_demo\src\main\java\com\ouywl\activemq\topic" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.oy.JVM" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.TestClassLoader">
-    <configuration name="CompletableFutureTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ouywl.future.CompletableFutureTest" />
-      <module name="2021-3-19" />
+  <component name="RunManager" selected="Application.MyClassLoader">
+    <configuration name="Math" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.oy.JVM.Math" />
+      <module name="JVMTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ouywl.future.*" />
+          <option name="PATTERN" value="com.oy.JVM.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyClassLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.oy.JVM.MyClassLoader" />
+      <module name="JVMTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oy.JVM.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,19 +191,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ouy.ouywl.tt" />
-      <module name="activemq_demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ouy.ouywl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -220,21 +219,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.tt" />
-      <item itemvalue="Application.CompletableFutureTest" />
       <item itemvalue="Application.maxProfit" />
       <item itemvalue="Application.StreamTest" />
+      <item itemvalue="Application.TestClassLoader" />
       <item itemvalue="Spring Boot.OuywlApplication" />
       <item itemvalue="Spring Boot.OuywlApplication (1)" />
-      <item itemvalue="Application.TestClassLoader" />
+      <item itemvalue="Application.Math" />
+      <item itemvalue="Application.MyClassLoader" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyClassLoader" />
+        <item itemvalue="Application.Math" />
         <item itemvalue="Application.TestClassLoader" />
         <item itemvalue="Application.StreamTest" />
         <item itemvalue="Application.maxProfit" />
-        <item itemvalue="Application.tt" />
-        <item itemvalue="Application.CompletableFutureTest" />
       </list>
     </recent_temporary>
   </component>
@@ -326,7 +325,9 @@
       <workItem from="1660041611732" duration="237000" />
       <workItem from="1660126100905" duration="805000" />
       <workItem from="1660182612728" duration="2273000" />
-      <workItem from="1660202915696" duration="3174000" />
+      <workItem from="1660202915696" duration="4759000" />
+      <workItem from="1660283362347" duration="4182000" />
+      <workItem from="1660305267783" duration="8318000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交杨辉三角和二分查找">
       <created>1616114102845</created>
@@ -384,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658886866459</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="jvm-classLoader">
+      <created>1660206416434</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1660206416434</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +445,8 @@
     <MESSAGE value="环形链表II:快慢指针  &#10; 第一:如果存在环，那么慢指针在走完第一圈之前和快指针相遇,因为当慢指针到了环的头节点时，快指针和慢指针的距离最大为环长度-1;而每次快指针以1的速度追赶慢指针,环长度-1&lt;环长度，所以必定会在走完第一圈之前追赶上;&#10; 第二:设x=头节点到环头节点,y=环头节点到相遇节点;z=相遇节点到环头节点,&#10; 那么环长度=y+z,&#10; 因为2(x+y)= x+y + n(y+z),&#10; 得出 x =z+(n-1)(y+z)&#10;     x = z+(n-1)*环长度;" />
     <MESSAGE value="bug" />
     <MESSAGE value="环形链表：双指针解法" />
-    <option name="LAST_COMMIT_MESSAGE" value="环形链表：双指针解法" />
+    <MESSAGE value="jvm-classLoader" />
+    <option name="LAST_COMMIT_MESSAGE" value="jvm-classLoader" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

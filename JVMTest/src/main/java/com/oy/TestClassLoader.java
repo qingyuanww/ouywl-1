@@ -28,7 +28,7 @@ public class TestClassLoader {
         System.out.println("the extClassloader : " + extClassloader);
         System.out.println("the appClassLoader : " + appClassLoader);
         System.out.println();
-        System.out.println("bootstrapLoader加载以下文件(核心类库)：");
+        System.out.println("bootstrapLoader加载以下文件(核心类库)："); //target目录下的
         URL[] urls = Launcher.getBootstrapClassPath().getURLs();
         for (int i = 0; i < urls.length; i++) {
             System.out.println(urls[i]);
@@ -41,6 +41,7 @@ public class TestClassLoader {
         for (String s : System.getProperty("java.class.path").split(";")) {
             System.out.println(s);
         }
-
+        //问题：为什么appclassloader也加载 lib和lib\ext下的核心类库
+        //原因：虽然它打印了，但是并没有加载（双亲委派模式）
     }
 }
