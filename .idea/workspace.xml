@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a50d76c-c341-4f6d-9810-9aaf97457d67" name="Default Changelist" comment="jvm-实现自己的classLoder;继承classLoader类,重写findClass方法">
+    <list default="true" id="2a50d76c-c341-4f6d-9810-9aaf97457d67" name="Default Changelist" comment="jvm-打破双亲委派机制(因为机制的实现是loadClass方法,继承并重写即可)">
+      <change afterPath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM/User1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM/MyClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM/MyClassLoader.java" afterDir="false" />
     </list>
@@ -320,7 +321,7 @@
       <workItem from="1660182612728" duration="2273000" />
       <workItem from="1660202915696" duration="4759000" />
       <workItem from="1660283362347" duration="4182000" />
-      <workItem from="1660305267783" duration="8901000" />
+      <workItem from="1660305267783" duration="9382000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交杨辉三角和二分查找">
       <created>1616114102845</created>
@@ -392,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660451839559</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="jvm-打破双亲委派机制(因为机制的实现是loadClass方法,继承并重写即可)">
+      <created>1660452166248</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1660452166248</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,7 +455,8 @@
     <MESSAGE value="环形链表：双指针解法" />
     <MESSAGE value="jvm-classLoader" />
     <MESSAGE value="jvm-实现自己的classLoder;继承classLoader类,重写findClass方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="jvm-实现自己的classLoder;继承classLoader类,重写findClass方法" />
+    <MESSAGE value="jvm-打破双亲委派机制(因为机制的实现是loadClass方法,继承并重写即可)" />
+    <option name="LAST_COMMIT_MESSAGE" value="jvm-打破双亲委派机制(因为机制的实现是loadClass方法,继承并重写即可)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
