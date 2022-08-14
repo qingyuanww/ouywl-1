@@ -44,6 +44,14 @@ public class MyClassLoader extends ClassLoader {
         try {
             byte[] DATA = loadByte(NAME);
             //把获取到的二进制流加载到内存中（方法区）
+            /**
+             *             这里有沙箱安全机制。ClassLoader.preDefineClass 禁止加载类
+             *             if ((name != null) && name.startsWith("java.")) {
+             *                 throw new SecurityException
+             *                         ("Prohibited package name: " +
+             *                                 name.substring(0, name.lastIndexOf('.')));
+             *             }
+             */
             return defineClass(NAME, DATA, 0, DATA.length);
         } catch (Exception e) {
             e.printStackTrace();
@@ -81,11 +89,11 @@ public class MyClassLoader extends ClassLoader {
                     // If still not found, then invoke findClass in order
                     // to find the class.
                     long t1 = System.nanoTime();
-                    if(name.equals("com.oy.JVM.User")){
+                    if(name.startsWith("com.oy.JVM")){
                         //这里是走自己的加载逻辑
                         c = findClass(name);
                     }else {
-                        //用父类的loadClass方法
+                        //用父类的loadClass方法。走双亲机制，最后由引导类加载器加载Object。记得要赋值哦
                         c=this.getParent().loadClass(name);
                     }
                     // this is the defining class loader; record the stats
