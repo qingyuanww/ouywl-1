@@ -17,6 +17,28 @@ public class Student {
     // 生日
     private Date birth;
 
+    private Double rate;
+
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", sex=" + sex +
+                ", birth=" + birth +
+                ", rate=" + rate +
+                '}';
+    }
+
+    public Double getRate() {
+        return rate;
+    }
+
+    public void setRate(Double rate) {
+        this.rate = rate;
+    }
+
     public Student(int id, String name, int sex, Date birth) {
         this.id = id;
         this.name = name;

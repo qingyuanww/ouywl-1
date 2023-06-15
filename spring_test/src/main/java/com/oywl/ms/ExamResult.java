@@ -14,6 +14,15 @@ public class ExamResult {
     // 考试成绩
     private int score;
 
+    @Override
+    public String toString() {
+        return "ExamResult{" +
+                "exam=" + exam +
+                ", student=" + student +
+                ", score=" + score +
+                '}';
+    }
+
     public ExamResult(Exam exam, Student student, int score) {
         this.exam = exam;
         this.student = student;
