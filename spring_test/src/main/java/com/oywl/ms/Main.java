@@ -51,8 +51,8 @@ public class Main {
         List<Student> studentList = students.stream().sorted(Comparator.comparing(Student::getRate).reversed()).limit(n).collect(Collectors.toList());
 
         LinkedHashMap<Student, List<ExamResult>> returnMap = new LinkedHashMap<>();
-        for (int i = 0; i < studentList.size(); i++) {
-            returnMap.put(studentList.get(i),collect.get(studentList.get(i)));
+        for (Student student : studentList) {
+            returnMap.put(student, collect.get(student));
         }
         return returnMap;
 //        //升序
@@ -70,11 +70,16 @@ public class Main {
 
     public static void main(String[] args) {
         Map<Student, List<ExamResult>> calculate = Main.calculate(3, get());
-        Set<Student> students = calculate.keySet();
 
-        for (Student student : students) {
-            System.out.println("-->"+student.getId()+":"+student.getName()+"-"+student.getRate()+calculate.get(student).stream().map(item->item.getExam().getCourse().getName()+item.getScore()).distinct().collect(Collectors.joining(",")));
+        for (Map.Entry<Student, List<ExamResult>> next : calculate.entrySet()) {
+            Student key = next.getKey();
+            List<ExamResult> value = next.getValue();
+            System.out.println(key.getRate() + ":" + key.getName() + value.stream().map(examResult -> examResult.getExam().getCourse().getName() + examResult.getScore()).distinct().collect(Collectors.joining(",")));
         }
+//        Set<Student> students = calculate.keySet();
+//        for (Student student : students) {
+//            System.out.println("-->"+student.getId()+":"+student.getName()+"-"+student.getRate()+calculate.get(student).stream().map(item->item.getExam().getCourse().getName()+item.getScore()).distinct().collect(Collectors.joining(",")));
+//        }
     }
 
     static List<ExamResult> get(){

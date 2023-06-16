@@ -1,0 +1,80 @@
+<COND_A03>
+    <IDOC BEGIN="1">
+        <EDI_DC40 SEGMENT="1">
+            <TABNAM>EDI_DC40</TABNAM>
+            <MANDT>100</MANDT>
+            <DOCNUM>0000000000116617</DOCNUM>
+            <DOCREL>755</DOCREL>
+            <STATUS>30</STATUS>
+            <DIRECT>1</DIRECT>
+            <OUTMOD>2</OUTMOD>
+            <IDOCTYP>COND_A03</IDOCTYP>
+            <MESTYP>COND_A</MESTYP>
+            <SNDPOR>SAPPS4</SNDPOR>
+            <SNDPRT>LS</SNDPRT>
+            <SNDPRN>PS4CLNT100</SNDPRN>
+            <RCVPOR>CPI_PRI_2E</RCVPOR>
+            <RCVPRT>LS</RCVPRT>
+            <RCVPRN>CPIPRD_4EU</RCVPRN>
+            <CREDAT>20230306</CREDAT>
+            <CRETIM>093036</CRETIM>
+            <SERIAL>20230306013036693001</SERIAL>
+        </EDI_DC40>
+        <E1KOMG SEGMENT="1">
+            <KVEWE>A</KVEWE>
+            <KOTABNR>910</KOTABNR>
+            <KAPPL>V</KAPPL>
+            //条件类型
+            <KSCHL>ZTP2</KSCHL>
+            <VAKEY>ZVEHHX1ETD3A61EU010417</VAKEY>
+            //物料
+            <MATNR>HX1ETD3A61EU010417</MATNR>
+            //这是自己加的-需要确定-物料组
+            <MATKL>HX1ETD3A61EU010417</MATKL>
+            <EVRTP>00000</EVRTP>
+            <MTART>ZVEH</MTART>
+            <POSNR>000000</POSNR>
+            <ANZSN>0000000000</ANZSN>
+            <VAKEY_LONG>ZVEHHX1ETD3A61EU010417</VAKEY_LONG>
+            <MATNR_LONG>HX1ETD3A61EU010417</MATNR_LONG>
+            <E1KONH SEGMENT="1">
+                //条件记录编号
+                <KNUMH>0000101692</KNUMH>
+                //有效期起
+                <DATAB>20230306</DATAB>
+                //有效期到
+                <DATBI>99991231</DATBI>
+                <E1KONP SEGMENT="1">
+                    <KSCHL>ZTP2</KSCHL>
+                    <STFKZ>A</STFKZ>
+                    <KSTBM>0.000</KSTBM>
+                    <KSTBW>0.00</KSTBW>
+                    <KRECH>C</KRECH>
+                    //金额
+                    <KBETR>25500.00</KBETR>
+                    <KONWA>EUR</KONWA>
+                    //定价单位
+                    <KPEIN>1</KPEIN>
+                    //条件单位
+                    <KMEIN>PCE</KMEIN>
+                    <KUMZA>0</KUMZA>
+                    <KUMNE>0</KUMNE>
+                    <MXWRT>0.00</MXWRT>
+                    <GKWRT>0.00</GKWRT>
+                    <ZAEHK_IND>01</ZAEHK_IND>
+                    <KBRUE>0.00</KBRUE>
+                    <VALTG>00</VALTG>
+                    <VALDT>00000000</VALDT>
+                    <ANZAUF>00</ANZAUF>
+                    <MIKBAS>0.000</MIKBAS>
+                    <MXKBAS>0.000</MXKBAS>
+                    <KOMXWRT>0.00</KOMXWRT>
+                    <KLF_STG>0000</KLF_STG>
+                    <KLF_KAL>0000</KLF_KAL>
+                    <ZAEHK_IND_LONG>001</ZAEHK_IND_LONG>
+                    <KBSTAT>2</KBSTAT>
+                </E1KONP>
+            </E1KONH>
+        </E1KOMG>
+    </IDOC>
+</COND_A03>
