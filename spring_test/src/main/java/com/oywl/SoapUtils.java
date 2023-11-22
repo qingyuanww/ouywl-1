@@ -36,7 +36,7 @@ public class SoapUtils {
         cn.hutool.json.JSONObject xmlJSONObj = XML.toJSONObject(soapResponse);
 
         String s=xmlJSONObj.getJSONObject("soapenv:Envelope").getJSONObject("soapenv:Body").getJSONObject("web:ERPInterface")
-                .getJSONObject("Key").toString();
+                .get("Key").toString();
         return s;
     }
 }
