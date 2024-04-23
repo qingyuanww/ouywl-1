@@ -1,23 +1,111 @@
 package com.oy.test.threadPool;
 
+
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.HashSet;
 import java.util.Queue;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @description:
+ * @description: 自定义线程池-测试类
  * @author: oywl
  * @time: 2024-03-18 22:54
  */
+@Slf4j(topic = "c.TestPool")
+class TestPool {
+    public static void main(String[] args) {
+        for (int i = 0; i < 5; i++) {
+            ThreadPool threadPool = new ThreadPool(2, 1000, TimeUnit.MILLISECONDS, 10);
+            int j = i;
+            threadPool.execute(() -> {
+                log.debug("{}", j);
+            });
+        }
+    }
+}
 
-public class TestPool {
+// 自定义线程池
+@Slf4j(topic = "c.ThreadPool")
+class ThreadPool{
+    //任务队列
+    private BlockingQueue<Runnable> taskQueue;
 
+    //线程集合
+    private final HashSet<Worker> workers = new HashSet<>();
+
+    //核心线程数
+    private int coreSize;
+
+    //任务的超时时间
+    private long timeout;
+
+    //时间工具类
+    private TimeUnit timeUnit;
+
+    //执行任务
+    public void execute(Runnable task){
+        //1. 当任务数没有超过coreSize时，直接交给workder对象执行
+        // 任务数超过coreSize时，加入任务队列暂存
+        synchronized (workers){
+            if (workers.size() < coreSize) {
+                Worker worker = new Worker(task);
+                log.debug("新增workerThread:{}", task);
+                workers.add(worker);
+                worker.start();
+            } else {
+                log.debug("加入任务队列:{}", task);
+                taskQueue.put(task);
+            }
+        }
+
+    }
+
+
+    //构造方法
+    public ThreadPool(int coreSize, long timeout, TimeUnit timeUnit,int queueCapcity){
+        this.coreSize = coreSize;
+        this.timeUnit = timeUnit;
+        taskQueue = new BlockingQueue<>(queueCapcity);
+        this.timeout = timeout;
+    }
+
+
+    public final class Worker extends Thread{
+        private Runnable task;
+
+        public Worker(Runnable task) {
+            this.task = task;
+        }
+
+        @Override
+        public void run() {
+            //执行任务
+            // 当task不为空/ task执行完毕，再从任务队列获取任务并执行
+            while (task != null || (task = taskQueue.take()) != null) {
+                try {
+                    log.debug("正在执行...{}",task);
+                    task.run();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                } finally {
+                    task = null;
+                }
+            }
+            synchronized (workers){
+                log.debug("worker被移除:{}",this);
+                workers.remove(this);
+            }
+        }
+    }
 }
 
 // 阻塞队列
-class BlockQueue<T>{
+class BlockingQueue<T>{
     // 一个队列，存放任务
     private Deque<T> deque =new ArrayDeque<>();
 
@@ -30,6 +118,12 @@ class BlockQueue<T>{
     private Condition consumer = lock.newCondition();
     //容量
     private int capcity;
+
+    public BlockingQueue(int queueCapcity) {
+        this.capcity=queueCapcity;
+    }
+
+
 
     //消费者 阻塞获取消息
     public T take(){
