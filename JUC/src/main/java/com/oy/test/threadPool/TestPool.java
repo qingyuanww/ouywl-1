@@ -76,6 +76,8 @@ class ThreadPool{
 
 
     public final class Worker extends Thread{
+        //这里的Runnable 接口对象，不是用来创建线程，是用来获取任务的，执行任务的业务逻辑
+        // 这里使用的是生产者消费者模式，使用阻塞队列来存储任务
         private Runnable task;
 
         public Worker(Runnable task) {
@@ -86,9 +88,9 @@ class ThreadPool{
         public void run() {
             //执行任务
             // 当task不为空/ task执行完毕，再从任务队列获取任务并执行
-            while (task != null || (task = taskQueue.take()) != null) {
+            while (task != null || (task = taskQueue.poll(timeout,timeUnit)) != null) {
                 try {
-                    log.debug("正在执行...{}",task);
+                    log.debug("准备执行lambda表达式传入的业务逻辑...{}",task);
                     task.run();
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -161,6 +163,31 @@ class BlockingQueue<T>{
             //唤醒等待的消费者
             consumer.signal();
         }finally {
+            lock.unlock();
+        }
+    }
+
+    //带超时的阻塞获取
+    public T poll(long timeout, TimeUnit unit){
+        lock.lock();
+        try{
+            long nanos = unit.toNanos(timeout);//将timeout时间统一转化为纳秒
+            while(deque.isEmpty()){
+                try {
+                    //没等到直接返回
+                    if(nanos<=0){
+                        return null;
+                    }
+                    //返回的是剩余时间
+                    nanos = consumer.awaitNanos(nanos);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            T t = deque.removeFirst();
+            producer.signal();
+            return t;
+        }finally{
             lock.unlock();
         }
     }
