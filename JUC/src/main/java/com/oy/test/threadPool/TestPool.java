@@ -19,8 +19,8 @@ import java.util.concurrent.locks.ReentrantLock;
 @Slf4j(topic = "c.TestPool")
 class TestPool {
     public static void main(String[] args) {
+        ThreadPool threadPool = new ThreadPool(2, 1000, TimeUnit.MILLISECONDS, 10);
         for (int i = 0; i < 5; i++) {
-            ThreadPool threadPool = new ThreadPool(2, 1000, TimeUnit.MILLISECONDS, 10);
             int j = i;
             threadPool.execute(() -> {
                 log.debug("{}", j);
