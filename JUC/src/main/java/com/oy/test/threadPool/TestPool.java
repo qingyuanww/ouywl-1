@@ -20,9 +20,14 @@ import java.util.concurrent.locks.ReentrantLock;
 class TestPool {
     public static void main(String[] args) {
         ThreadPool threadPool = new ThreadPool(2, 1000, TimeUnit.MILLISECONDS, 10);
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 15; i++) {
             int j = i;
             threadPool.execute(() -> {
+                try {
+                    Thread.sleep(1000000L);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 log.debug("{}", j);
             });
         }
@@ -58,7 +63,6 @@ class ThreadPool{
                 workers.add(worker);
                 worker.start();
             } else {
-                log.debug("加入任务队列:{}", task);
                 taskQueue.put(task);
             }
         }
@@ -107,6 +111,7 @@ class ThreadPool{
 }
 
 // 阻塞队列
+@Slf4j(topic = "c.BlockingQueue")
 class BlockingQueue<T>{
     // 一个队列，存放任务
     private Deque<T> deque =new ArrayDeque<>();
@@ -149,24 +154,50 @@ class BlockingQueue<T>{
     }
 
     //生产者 阻塞 存入消息
-    public void put(T t){
+    public void put(T task){
         lock.lock();
         try {
             while (deque.size()==capcity){
                 try {
+                    log.debug("等待加入任务队列{}...",task);
                     producer.await();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
-            deque.addLast(t);
+            log.debug("加入任务队列:{}",task);
+            deque.addLast(task);
             //唤醒等待的消费者
             consumer.signal();
         }finally {
             lock.unlock();
         }
     }
-
+    //带超时的阻塞添加
+    public boolean offer(T task,long timeout, TimeUnit unit){
+        lock.lock();
+        try {
+            long nanos = unit.toNanos(timeout);//将timeout时间统一转化为纳秒
+            while (deque.size()==capcity){
+                try {
+                    if (nanos < 0) {
+                        return false;
+                    }
+                    log.debug("等待加入任务队列{}...",task);
+                    producer.await();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            log.debug("加入任务队列:{}",task);
+            deque.addLast(task);
+            //唤醒等待的消费者
+            consumer.signal();
+            return true;
+        }finally {
+            lock.unlock();
+        }
+    }
     //带超时的阻塞获取
     public T poll(long timeout, TimeUnit unit){
         lock.lock();
@@ -175,7 +206,7 @@ class BlockingQueue<T>{
             while(deque.isEmpty()){
                 try {
                     //没等到直接返回
-                    if(nanos<=0){
+                    if (nanos <= 0) {
                         return null;
                     }
                     //返回的是剩余时间
