@@ -21,7 +21,6 @@ class TestPool {
     public static void main(String[] args) {
         ThreadPool threadPool = new ThreadPool(1, 1000, TimeUnit.MILLISECONDS, 1,
                 (queue, task) -> {
-                    log.debug("进入拒绝策略...");
                     /**
                      * 1、死等
                      * 2、带超时时间的等待
@@ -29,13 +28,23 @@ class TestPool {
                      * 4、让调用者抛出异常
                      * 5、让调用者自己执行任务
                      */
-                    queue.put(task);
+                    //1、死等
+//                    queue.put(task);
+                    //2、带超时时间的等待
+//                    queue.offer(task,500,TimeUnit.MILLISECONDS);
+//                    //3、让调用者放弃执行
+//                    log.debug("放弃执行");
+//                    //4、让调用者抛出异常
+//                    throw  new RuntimeException("任务过多");//这样的话后续的任务不会执行
+//                    //5、让调用者自己执行任务
+                    task.run();
+
                 });
         for (int i = 0; i < 3; i++) {
             int j = i;
             threadPool.execute(() -> {
                 try {
-                    Thread.sleep(1000000L);
+                    Thread.sleep(1000L);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -80,9 +89,7 @@ class ThreadPool{
                 workers.add(worker);
                 worker.start();
             } else {
-                taskQueue.put(task);
-
-
+//                taskQueue.put(task);
                 taskQueue.tryPut(rejectPolicy,task);
             }
         }
@@ -115,7 +122,6 @@ class ThreadPool{
             // 当task不为空/ task执行完毕，再从任务队列获取任务并执行
             while (task != null || (task = taskQueue.poll(timeout,timeUnit)) != null) {
                 try {
-                    log.debug("准备执行lambda表达式传入的业务逻辑...{}",task);
                     task.run();
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -202,10 +208,12 @@ class BlockingQueue<T>{
             while (deque.size()==capcity){
                 try {
                     if (nanos < 0) {
+                        log.debug("ss");
                         return false;
                     }
                     log.debug("等待加入任务队列{}...",task);
-                    producer.await();
+                    //返回的是剩余时间
+                    nanos = producer.awaitNanos(nanos);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
