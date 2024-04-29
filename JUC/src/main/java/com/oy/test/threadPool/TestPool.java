@@ -19,8 +19,19 @@ import java.util.concurrent.locks.ReentrantLock;
 @Slf4j(topic = "c.TestPool")
 class TestPool {
     public static void main(String[] args) {
-        ThreadPool threadPool = new ThreadPool(2, 1000, TimeUnit.MILLISECONDS, 10);
-        for (int i = 0; i < 15; i++) {
+        ThreadPool threadPool = new ThreadPool(1, 1000, TimeUnit.MILLISECONDS, 1,
+                (queue, task) -> {
+                    log.debug("进入拒绝策略...");
+                    /**
+                     * 1、死等
+                     * 2、带超时时间的等待
+                     * 3、让调用者放弃执行
+                     * 4、让调用者抛出异常
+                     * 5、让调用者自己执行任务
+                     */
+                    queue.put(task);
+                });
+        for (int i = 0; i < 3; i++) {
             int j = i;
             threadPool.execute(() -> {
                 try {
@@ -34,6 +45,10 @@ class TestPool {
     }
 }
 
+// 拒绝策略
+interface RejectPolicy<T> {
+    void reject(BlockingQueue<T> blockingQueue, T task);
+}
 // 自定义线程池
 @Slf4j(topic = "c.ThreadPool")
 class ThreadPool{
@@ -52,6 +67,8 @@ class ThreadPool{
     //时间工具类
     private TimeUnit timeUnit;
 
+    private RejectPolicy rejectPolicy;
+
     //执行任务
     public void execute(Runnable task){
         //1. 当任务数没有超过coreSize时，直接交给workder对象执行
@@ -64,6 +81,9 @@ class ThreadPool{
                 worker.start();
             } else {
                 taskQueue.put(task);
+
+
+                taskQueue.tryPut(rejectPolicy,task);
             }
         }
 
@@ -71,11 +91,12 @@ class ThreadPool{
 
 
     //构造方法
-    public ThreadPool(int coreSize, long timeout, TimeUnit timeUnit,int queueCapcity){
+    public ThreadPool(int coreSize, long timeout, TimeUnit timeUnit,int queueCapcity,RejectPolicy<Runnable> rejectPolicy){
         this.coreSize = coreSize;
         this.timeUnit = timeUnit;
         taskQueue = new BlockingQueue<>(queueCapcity);
         this.timeout = timeout;
+        this.rejectPolicy=rejectPolicy;
     }
 
 
@@ -223,4 +244,19 @@ class BlockingQueue<T>{
         }
     }
 
+    public void tryPut(RejectPolicy<T> rejectPolicy, T task) {
+        lock.lock();
+        try {
+            if (deque.size()==capcity){
+                rejectPolicy.reject(this,task);
+            }else {
+                log.debug("加入任务队列:{}", task);
+                deque.addLast(task);
+                //唤醒等待的消费者
+                consumer.signal();
+            }
+        }finally {
+            lock.unlock();
+        }
+    }
 }
