@@ -1,0 +1,64 @@
+feign:
+  dms:
+    repair:
+      name: dms-repair
+      path: /api/2b/dms.repair
+    finance:
+      name: dms-finance
+      path: /api/2b/dms.finance
+    chargepoint:
+      name: dsp-charge-point
+      path: /api/2b/dsp.chargepoint
+    download:
+      name: dms-download
+      path: /api/dms.download
+    report:
+      name: dms-report
+      path: /api/2b/dms.report
+  dcs:
+    repair:
+      name: dcs-repair
+      path: /api/2b/dcs.repair
+  mid:
+    auth:
+      name: mid-auth
+      path: /api/midend/auth
+    org:
+      name: mid-org
+      path: /api/midend/org
+    basicdata:
+      name: mid-basicdata
+      path: /api/midend/basicdata
+loginCheck:
+  enable: true
+schema-modify:
+  schemaInfos:
+    basic_data: basic_data
+    dms_service: dms_service
+    dcs_coordinate: dcs_coordinate
+    dms_finance: dms_finance
+    dms_download: dms_download
+    dms_authentication: dms_authentication
+    dms_organization: dms_organization
+    dsp_charge_point: dsp_charge_point
+  enabled: false
+
+dmscloud:
+  customerRepair:
+    feign:
+      name: ${dmscloud.customerRepair.name:dmscloud-customerRepair}
+      path: ${dmscloud.customerRepair.path:/dmscloud.customerRepair}
+  finance:
+    feign:
+      name: ${dmscloud.finance.name:dms-finance}
+      path: ${dmscloud.finance.path:/dms.finance}
+  repair:
+    feign:
+      name: ${dmscloud.repair.name:dmscloud-repair}
+      path: ${dmscloud.repair.path:/dmscloud.repair}
+
+swagger:
+  basic:
+    enable: true
+    username: admin
+    password: admin123456

@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/17-Test/17-Test.iml" filepath="$PROJECT_DIR$/17-Test/17-Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/2021-3-19/2021-3-19.iml" filepath="$PROJECT_DIR$/2021-3-19/2021-3-19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JUC/JUC.iml" filepath="$PROJECT_DIR$/JUC/JUC.iml" />
       <module fileurl="file://$PROJECT_DIR$/JVMTest/JVMTest.iml" filepath="$PROJECT_DIR$/JVMTest/JVMTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/ThreadTest/ThreadTest.iml" filepath="$PROJECT_DIR$/ThreadTest/ThreadTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/activemq_demo/activemq_demo.iml" filepath="$PROJECT_DIR$/activemq_demo/activemq_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mt_interview/mt_interview.iml" filepath="$PROJECT_DIR$/mt_interview/mt_interview.iml" />
       <module fileurl="file://$PROJECT_DIR$/ouywl.iml" filepath="$PROJECT_DIR$/ouywl.iml" />
       <module fileurl="file://$PROJECT_DIR$/reflectDemo/reflectDemo.iml" filepath="$PROJECT_DIR$/reflectDemo/reflectDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spi-demo/spi-demo.iml" filepath="$PROJECT_DIR$/spi-demo/spi-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_test/spring_test.iml" filepath="$PROJECT_DIR$/spring_test/spring_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/streamTest/streamTest.iml" filepath="$PROJECT_DIR$/streamTest/streamTest.iml" />
     </modules>
   </component>
 </project>

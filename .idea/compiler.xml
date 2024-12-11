@@ -7,27 +7,48 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="17-Test" />
+        <module name="mt_interview" />
+      </profile>
+      <profile name="Annotation profile for ouywl" enabled="true">
+        <sourceOutputDir name="../target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
         <module name="spring_test" />
         <module name="JVMTest" />
-        <module name="ThreadTest" />
+        <module name="spi-demo" />
         <module name="activemq_demo" />
+        <module name="JUC" />
+        <module name="streamTest" />
+        <module name="ThreadTest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="17-Test" target="8" />
       <module name="activemq_demo" target="1.8" />
-      <module name="JVMTest" target="1.8" />
+      <module name="JUC" target="8" />
+      <module name="JVMTest" target="8" />
+      <module name="mt_interview" target="16" />
       <module name="ouywl" target="1.8" />
-      <module name="spring_test" target="1.8" />
-      <module name="ThreadTest" target="1.8" />
+      <module name="spi-demo" target="8" />
+      <module name="spring_test" target="8" />
+      <module name="streamTest" target="8" />
+      <module name="ThreadTest" target="8" />
+      <module name="wrapper" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="17-Test" options="-parameters" />
+      <module name="JUC" options="-parameters" />
       <module name="JVMTest" options="-parameters" />
       <module name="ThreadTest" options="-parameters" />
       <module name="activemq_demo" options="-parameters" />
+      <module name="mt_interview" options="-parameters" />
       <module name="ouywl" options="-parameters" />
+      <module name="spi-demo" options="-parameters" />
       <module name="spring_test" options="-parameters" />
+      <module name="streamTest" options="-parameters" />
     </option>
   </component>
 </project>

@@ -69,7 +69,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Map<Student, List<ExamResult>> calculate = Main.calculate(3, get());
+        Map<Student, List<ExamResult>> calculate = Main.calculate(4, get());
 
         for (Map.Entry<Student, List<ExamResult>> next : calculate.entrySet()) {
             Student key = next.getKey();
@@ -80,6 +80,32 @@ public class Main {
 //        for (Student student : students) {
 //            System.out.println("-->"+student.getId()+":"+student.getName()+"-"+student.getRate()+calculate.get(student).stream().map(item->item.getExam().getCourse().getName()+item.getScore()).distinct().collect(Collectors.joining(",")));
 //        }
+        int[] arr= {3, 8, 1, 17, 9, 13};
+        System.out.println("排序之前");
+        //遍历输出数组
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + "\t");
+        }
+        int temp = 0;
+        for (int i = 0; i < arr.length-1; i++) {
+            for (int j = 0; j < arr.length-1 -i; j++) {
+                if (arr[j] > arr[j+1]){
+                    temp  = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+                for (int k = 0; k < arr.length; i++) {
+                    System.out.print(arr[k] + "\t");
+                }
+            }
+        }
+        System.out.println("\n"+"排序之后");
+        //遍历输出数组
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + "\t");
+        }
+
+
     }
 
     static List<ExamResult> get(){
@@ -97,7 +123,7 @@ public class Main {
         Course 政治 = new Course(4, "政治", null);
         Course 计算机 = new Course(5, "计算机", null);
 
-        Exam exam1 = new Exam(语文, 100, 60);
+        Exam exam1 = new Exam(语文, 100, 50);
         Exam exam2 = new Exam(数学, 100, 60);
         Exam exam3 = new Exam(英语, 100, 60);
         Exam exam4 = new Exam(政治, 100, 60);
@@ -109,7 +135,7 @@ public class Main {
         list.add(new ExamResult(exam2,zs,1));
         list.add(new ExamResult(exam3,zs,1));
         list.add(new ExamResult(exam4,zs,1));
-        list.add(new ExamResult(exam5,zs,66));
+        list.add(new ExamResult(exam5,zs,65));
 
 
 
@@ -120,7 +146,7 @@ public class Main {
         list.add(new ExamResult(exam5,ls,66));
 
 
-        list.add(new ExamResult(exam1,ww,1));
+        list.add(new ExamResult(exam1,ww,92));
         list.add(new ExamResult(exam2,ww,1));
         list.add(new ExamResult(exam3,ww,66));
         list.add(new ExamResult(exam4,ww,66));
@@ -130,7 +156,7 @@ public class Main {
         list.add(new ExamResult(exam2,zl,1));
         list.add(new ExamResult(exam3,zl,66));
         list.add(new ExamResult(exam4,zl,66));
-        list.add(new ExamResult(exam5,zl,66));
+        list.add(new ExamResult(exam5,zl,62));
         //假设三名学生  A 通过一门， B通过两门 ,C通过三门，不变了，默认都是五门课程
 
         return list;

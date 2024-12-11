@@ -1,7 +1,7 @@
 package com.ouywl.牛客;
 
 /**
- * @description: 合并两个有序链表
+ * @description: 合并两个有序链表  递归，栈结构哦
  * @author: oywl https://leetcode.cn/problems/merge-two-sorted-lists/
  *
  * 关于递归的理解：首先，一个逻辑（或者一个循环）结束，下一个开始同样的逻辑循环; 循环循环，一直循环，但是逻辑是一样的
@@ -13,6 +13,7 @@ package com.ouywl.牛客;
  */
 
 public class mergeTwoLists {
+
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         //谁先指向null,指针指向另一个不为null的链表
         if(list1==null){
@@ -28,6 +29,9 @@ public class mergeTwoLists {
             list1.next=mergeTwoLists(list1.next,list2);
             return list1;
         }
+
+
+
     }
 //     * Definition for singly-linked list.
       public class ListNode {

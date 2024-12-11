@@ -1,8 +1,9 @@
 package com.ouywl;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * @description:
@@ -11,7 +12,8 @@ import java.util.stream.Stream;
  */
 
 public class StreamTest{
-    public static void main(String[] args){
+    public static final Integer BOOKDING_ORDER_STATUS_90571001 = 90571001;
+    public static void main(String[] args) throws ParseException {
         List<User> list = new ArrayList<>();
         //定义三个用户对象
         User user1 = new User();
@@ -55,6 +57,11 @@ public class StreamTest{
         ss.append("3231");
         ss.append("dsa");
         ss.append("dasda");
+
+        System.out.println(BOOKDING_ORDER_STATUS_90571001.equals(new Integer(90571001)));
+        System.out.println("SURVEY_PM SURVEY_PM_MOBILE".toLowerCase());
+
+        System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse("2022-09-30" + " 00:00:00"));
     }
 }
 

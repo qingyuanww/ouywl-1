@@ -1,6 +1,6 @@
 package com.ouywl.牛客;
 
-import java.util.Stack;
+import com.ouywl.牛客.entity.ListNode;
 
 /**
  * @description: 321 421 返回247

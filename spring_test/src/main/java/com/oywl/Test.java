@@ -9,11 +9,13 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
+import sun.util.resources.LocaleData;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 import java.util.*;
 
 /**
@@ -83,6 +85,11 @@ public class Test {
         System.out.println(mb);
         System.out.println(mb.multiply(rate));
         System.out.println(mb.multiply(rate).setScale(4,BigDecimal.ROUND_HALF_UP));
+        System.out.println(LocalDateTime.now());
+        System.out.println(new Date());
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+        System.out.println(format.parse("2023-05-12 17:48:27"));
     }
 }
 

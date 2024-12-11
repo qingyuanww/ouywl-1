@@ -45,7 +45,7 @@ public class CompletableFutureTest {
         AtomicReference<String> result3 = new AtomicReference<>();
         AtomicReference<String> result4 = new AtomicReference<>();
         AtomicReference<String> result5 = new AtomicReference<>();
-
+        //阻塞c3,c4,c5
         CompletableFuture<Void> cf6 = CompletableFuture.allOf(cf3, cf4, cf5);
         CompletableFuture<String> result = cf6.thenApply(v -> {
             //这里的join并不会阻塞，因为传给thenApply的函数是在CF3、CF4、CF5全部完成时，才会执行 。

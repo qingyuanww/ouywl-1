@@ -1,5 +1,7 @@
 package com.ouywl.牛客;
 
+import com.ouywl.牛客.entity.ListNode;
+
 /** 链表的中间节点
  * @description:https://leetcode.cn/problems/middle-of-the-linked-list/
  * @author: oywl

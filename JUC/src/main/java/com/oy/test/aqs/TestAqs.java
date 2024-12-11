@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.LockSupport;
 
 /**
  * @description:
@@ -20,8 +21,9 @@ public class TestAqs {
             lock.lock();
             try {
                 log.debug("locking....");
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
+//                Thread.sleep(1000);
+                LockSupport.park();
+            } catch (Exception e) {
                 e.printStackTrace();
             } finally {
                 log.debug("unlocking.....");

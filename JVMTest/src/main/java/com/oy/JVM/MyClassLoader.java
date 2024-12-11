@@ -89,7 +89,7 @@ public class MyClassLoader extends ClassLoader {
                     // If still not found, then invoke findClass in order
                     // to find the class.
                     long t1 = System.nanoTime();
-                    if(name.startsWith("com.oy.JVM")){
+                    if(name.startsWith("com.oy.JVM.User")){
                         //这里是走自己的加载逻辑
                         c = findClass(name);
                     }else {

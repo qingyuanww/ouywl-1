@@ -4,10 +4,72 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a50d76c-c341-4f6d-9810-9aaf97457d67" name="Default Changelist" comment="jvm-打破双亲委派机制(因为机制的实现是loadClass方法,继承并重写即可)">
-      <change afterPath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM/User1.java" afterDir="false" />
+    <list default="true" id="2a50d76c-c341-4f6d-9810-9aaf97457d67" name="Default Changelist" comment="AQS-基础">
+      <change afterPath="$PROJECT_DIR$/17-Test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-Test/src/main/java/Test_17.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-Test/src/main/java/Test_18.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/future/FutureTest02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/tttt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/entity/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/面试/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/面试/MTTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/面试/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/面试/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/面试/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/面试/ShapeCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/面试/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/面试/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JUC/src/main/java/com/oy/test/reentrantLock/t5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM/impl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM/service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM2/OuoOfMemoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM2/StackOverFlowTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThreadTest/src/main/java/com/oywl/Thread/OnlyMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activemq_demo/dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activemq_demo/sit.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mt_interview/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mt_interview/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mt_interview/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mt_interview/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mt_interview/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mt_interview/src/main/java/com/example/mt_interview/MtInterviewApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mt_interview/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mt_interview/src/test/java/com/example/mt_interview/MtInterviewApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spi-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spi-demo/src/main/java/面试/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/streamTest/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/streamTest/src/main/java/com/oywl/stream/StreamTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/streamTest/src/main/java/com/oywl/stream/entity/DateGrouping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/streamTest/src/main/java/com/oywl/stream/entity/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/streamTest/src/main/java/com/oywl/stream/entity/TimeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2021-3-19/2021-3-19.iml" beforeDir="false" afterPath="$PROJECT_DIR$/2021-3-19/2021-3-19.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/StreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/StreamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/future/CompletableFutureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/future/CompletableFutureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/ListNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/addTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/addTwoNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/linked_list_cycle_ii.java" beforeDir="false" afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/linked_list_cycle_ii.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/mergeTwoLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/mergeTwoLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/middle_of_the_linked_ist.java" beforeDir="false" afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/middle_of_the_linked_ist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/revert_linked_list.java" beforeDir="false" afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/revert_linked_list.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JUC/src/main/java/com/oy/test/aqs/TestAqs.java" beforeDir="false" afterPath="$PROJECT_DIR$/JUC/src/main/java/com/oy/test/aqs/TestAqs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JUC/src/main/java/com/oy/test/reentrantLock/t2.java" beforeDir="false" afterPath="$PROJECT_DIR$/JUC/src/main/java/com/oy/test/reentrantLock/t2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM/Math.java" beforeDir="false" afterPath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM/Math.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM/MyClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM/MyClassLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadTest/src/main/java/com/oywl/Thread/CountDownLatchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ThreadTest/src/main/java/com/oywl/Thread/CountDownLatchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadTest/src/main/java/com/oywl/Thread/mainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ThreadTest/src/main/java/com/oywl/Thread/mainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activemq_demo/activemq_demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/activemq_demo/activemq_demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2021-3-19/com/ouywl/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2021-3-19/com/ouywl/test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ouywl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ouywl.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_test/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_test/src/main/java/com/oywl/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_test/src/main/java/com/oywl/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_test/src/main/java/com/oywl/ms/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_test/src/main/java/com/oywl/ms/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +79,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
     </option>
@@ -46,20 +110,27 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$PROJECT_DIR$/../../../yonyou/repository2/com/yonyou/dmscloud/dmscloud.function/1.0.0/dmscloud.function-1.0.0.jar!/com/yonyou/dmscloud/function/exception/AuthForbiddenException.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/util/concurrent/CyclicBarrier.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/util/concurrent/TimeUnit.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../../../yonyou/repository2/com/yonyou/dmscloud/dmscloud.function/1.0.0/dmscloud.function-1.0.0.jar!/com/yonyou/dmscloud/function/exception/ServiceBizException.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/util/concurrent/atomic/LongAdder.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/math/BigDecimal.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../../../yonyou/repository2/cn/hutool/hutool-all/5.4.0/hutool-all-5.4.0.jar!/cn/hutool/core/date/DateUnit.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Math.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Class.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/String.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$PROJECT_DIR$/../../../yonyou/repository2/com/yonyou/dmscloud/dmscloud.framework/3.0.114-RELEASE/dmscloud.framework-3.0.114-RELEASE-sources.jar!/com/yonyou/dmscloud/framework/interceptors/ExceptionControllerAdvice.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Math.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../yonyou/repository2/com/yonyou/dmscloud/dmscloud.function/1.0.0/dmscloud.function-1.0.0.jar!/com/yonyou/dmscloud/function/exception/ServiceBizException.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/util/concurrent/CyclicBarrier.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/2021-3-19/src/com/ouywl/test.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/util/concurrent/TimeUnit.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/util/concurrent/atomic/LongAdder.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/time/format/DateTimeFormatter.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/util/Objects.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/find_pivot_index.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/math/BigDecimal.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/jre/lib/rt.jar!/sun/misc/Launcher.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/Hnoi.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/mergeTwoLists.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../../yonyou/repository2/cn/hutool/hutool-all/5.4.0/hutool-all-5.4.0.jar!/cn/hutool/core/date/DateUnit.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/ThreadTest/src/main/java/com/oywl/Thread/mainTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/util/Objects.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../yonyou/repository2/com/yonyou/dmscloud/dmscloud.function/1.0.0/dmscloud.function-1.0.0.jar!/com/yonyou/dmscloud/function/exception/AuthForbiddenException.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Class.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../../yonyou/repository2/org/springframework/boot/spring-boot/2.3.10.RELEASE/spring-boot-2.3.10.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/String.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Integer.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -95,13 +166,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/mt_interview/HELP.md" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/activemq_demo/src/main/java/com/ouywl/activemq/topic" />
+    <property name="jdk.selected.JAVA_MODULE" value="17" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ThreadTest/src/main/java/com/oywl/Thread" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
+    <property name="project.structure.side.proportion" value="0.13947004" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReactorSettings">
@@ -109,23 +182,36 @@
   </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
-    <option name="showRenderedDocs" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wshh\myproject\ouywl-1\ThreadTest\src\main\java\com\oywl\Thread" />
       <recent name="D:\import\ouywl\activemq_demo\src\main\java\com\ouywl\activemq\topic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ouywl" />
       <recent name="com.oy.JVM" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyClassLoader">
-    <configuration name="Math" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.oy.JVM.Math" />
-      <module name="JVMTest" />
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="node" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.Test_17.t1">
+    <configuration name="DateGrouping" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.oywl.stream.entity.DateGrouping" />
+      <module name="streamTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.oy.JVM.*" />
+          <option name="PATTERN" value="com.oywl.stream.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,12 +219,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyClassLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.oy.JVM.MyClassLoader" />
-      <module name="JVMTest" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.oywl.ms.Main" />
+      <module name="spring_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.oy.JVM.*" />
+          <option name="PATTERN" value="com.oywl.ms.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,41 +232,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ouywl.StreamTest" />
-      <module name="2021-3-19" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ouywl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestClassLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.oy.TestClassLoader" />
-      <module name="JVMTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.oy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="maxProfit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ouywl.牛客.maxProfit" />
-      <module name="2021-3-19" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ouywl.牛客.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="Test_18" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test_18" />
+      <module name="17-Test" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -198,6 +252,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test_17.t1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="17-Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test_17" />
+      <option name="METHOD_NAME" value="t1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeTest.t5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="streamTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oywl.stream.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oywl.stream.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.oywl.stream.entity.TimeTest" />
+      <option name="METHOD_NAME" value="t5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MtInterviewApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mt_interview" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.mt_interview.MtInterviewApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OuywlApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="activemq_demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ouy.ouywl.OuywlApplication" />
@@ -208,26 +295,29 @@
     <configuration name="OuywlApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ouywl" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ouy.ouywl.OuywlApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.maxProfit" />
-      <item itemvalue="Application.StreamTest" />
-      <item itemvalue="Application.TestClassLoader" />
-      <item itemvalue="Spring Boot.OuywlApplication" />
+      <item itemvalue="Application.DateGrouping" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Test_18" />
+      <item itemvalue="JUnit.TimeTest.t5" />
       <item itemvalue="Spring Boot.OuywlApplication (1)" />
-      <item itemvalue="Application.Math" />
-      <item itemvalue="Application.MyClassLoader" />
+      <item itemvalue="Spring Boot.OuywlApplication" />
+      <item itemvalue="Spring Boot.MtInterviewApplication" />
+      <item itemvalue="JUnit.Test_17.t1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MyClassLoader" />
-        <item itemvalue="Application.Math" />
-        <item itemvalue="Application.TestClassLoader" />
-        <item itemvalue="Application.StreamTest" />
-        <item itemvalue="Application.maxProfit" />
+        <item itemvalue="JUnit.Test_17.t1" />
+        <item itemvalue="Application.Test_18" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.DateGrouping" />
+        <item itemvalue="JUnit.TimeTest.t5" />
       </list>
     </recent_temporary>
   </component>
@@ -321,7 +411,229 @@
       <workItem from="1660182612728" duration="2273000" />
       <workItem from="1660202915696" duration="4759000" />
       <workItem from="1660283362347" duration="4182000" />
-      <workItem from="1660305267783" duration="9382000" />
+      <workItem from="1660305267783" duration="16475000" />
+      <workItem from="1660614258868" duration="1960000" />
+      <workItem from="1660629229144" duration="1564000" />
+      <workItem from="1660636482303" duration="5107000" />
+      <workItem from="1660656913282" duration="22000" />
+      <workItem from="1660729792560" duration="1314000" />
+      <workItem from="1660802293379" duration="2401000" />
+      <workItem from="1660891376673" duration="823000" />
+      <workItem from="1660900192695" duration="608000" />
+      <workItem from="1660903096587" duration="552000" />
+      <workItem from="1661132037401" duration="2249000" />
+      <workItem from="1661158916595" duration="1102000" />
+      <workItem from="1661219488475" duration="1190000" />
+      <workItem from="1661237214822" duration="1993000" />
+      <workItem from="1661305994815" duration="1207000" />
+      <workItem from="1661308117766" duration="1118000" />
+      <workItem from="1661311273274" duration="285000" />
+      <workItem from="1661311918537" duration="588000" />
+      <workItem from="1661503515195" duration="660000" />
+      <workItem from="1661853567940" duration="1698000" />
+      <workItem from="1661864607151" duration="307000" />
+      <workItem from="1661910932217" duration="588000" />
+      <workItem from="1661917304187" duration="2563000" />
+      <workItem from="1661954913686" duration="381000" />
+      <workItem from="1661997369152" duration="2408000" />
+      <workItem from="1662083126373" duration="3907000" />
+      <workItem from="1662213310584" duration="737000" />
+      <workItem from="1662342779507" duration="2387000" />
+      <workItem from="1662384899470" duration="536000" />
+      <workItem from="1662428508575" duration="3834000" />
+      <workItem from="1662515439787" duration="633000" />
+      <workItem from="1662530320253" duration="993000" />
+      <workItem from="1662634585347" duration="302000" />
+      <workItem from="1662902875726" duration="1248000" />
+      <workItem from="1663033918994" duration="1240000" />
+      <workItem from="1663120442323" duration="846000" />
+      <workItem from="1663156315282" duration="4465000" />
+      <workItem from="1663202232118" duration="4593000" />
+      <workItem from="1663220769868" duration="1486000" />
+      <workItem from="1663245883653" duration="6242000" />
+      <workItem from="1663293034226" duration="588000" />
+      <workItem from="1663324333658" duration="24000" />
+      <workItem from="1663643180949" duration="1302000" />
+      <workItem from="1663681973959" duration="589000" />
+      <workItem from="1663724721154" duration="1345000" />
+      <workItem from="1663741846653" duration="866000" />
+      <workItem from="1663826943917" duration="1684000" />
+      <workItem from="1663857915487" duration="642000" />
+      <workItem from="1664326510688" duration="723000" />
+      <workItem from="1664327284145" duration="1618000" />
+      <workItem from="1664342131323" duration="1572000" />
+      <workItem from="1664366903317" duration="2844000" />
+      <workItem from="1664435464619" duration="3005000" />
+      <workItem from="1665194124858" duration="1875000" />
+      <workItem from="1665212031960" duration="652000" />
+      <workItem from="1665223897704" duration="869000" />
+      <workItem from="1665282242198" duration="603000" />
+      <workItem from="1665311384758" duration="181000" />
+      <workItem from="1665366763141" duration="2245000" />
+      <workItem from="1665453314233" duration="761000" />
+      <workItem from="1665468739047" duration="1233000" />
+      <workItem from="1665539238145" duration="609000" />
+      <workItem from="1665649185691" duration="678000" />
+      <workItem from="1666145603355" duration="1338000" />
+      <workItem from="1666528086669" duration="1339000" />
+      <workItem from="1666577209855" duration="742000" />
+      <workItem from="1666590872825" duration="593000" />
+      <workItem from="1666663063174" duration="633000" />
+      <workItem from="1666678140518" duration="2804000" />
+      <workItem from="1666767118708" duration="3115000" />
+      <workItem from="1666835787860" duration="587000" />
+      <workItem from="1667282618092" duration="5386000" />
+      <workItem from="1667354105954" duration="596000" />
+      <workItem from="1667530401761" duration="704000" />
+      <workItem from="1667543063388" duration="4285000" />
+      <workItem from="1667786247988" duration="617000" />
+      <workItem from="1667800149973" duration="2547000" />
+      <workItem from="1667877224066" duration="2295000" />
+      <workItem from="1668075576195" duration="497000" />
+      <workItem from="1668391435716" duration="1413000" />
+      <workItem from="1668479794739" duration="3691000" />
+      <workItem from="1668491517285" duration="280000" />
+      <workItem from="1668492660102" duration="1417000" />
+      <workItem from="1670814765595" duration="964000" />
+      <workItem from="1670897755522" duration="669000" />
+      <workItem from="1671603331791" duration="594000" />
+      <workItem from="1673271302611" duration="1623000" />
+      <workItem from="1673316399555" duration="7592000" />
+      <workItem from="1673401436672" duration="592000" />
+      <workItem from="1673575766553" duration="1205000" />
+      <workItem from="1673834277251" duration="1569000" />
+      <workItem from="1673921149427" duration="2485000" />
+      <workItem from="1674958519502" duration="1186000" />
+      <workItem from="1674981085754" duration="248000" />
+      <workItem from="1675143209491" duration="418000" />
+      <workItem from="1675170067596" duration="764000" />
+      <workItem from="1675217102416" duration="2649000" />
+      <workItem from="1676444252212" duration="1129000" />
+      <workItem from="1676510859659" duration="1207000" />
+      <workItem from="1676598274470" duration="1181000" />
+      <workItem from="1676859190072" duration="3030000" />
+      <workItem from="1676878401800" duration="3055000" />
+      <workItem from="1678171750684" duration="701000" />
+      <workItem from="1678264364019" duration="1783000" />
+      <workItem from="1678325470057" duration="2069000" />
+      <workItem from="1678341177734" duration="638000" />
+      <workItem from="1678412013806" duration="1178000" />
+      <workItem from="1678539976267" duration="621000" />
+      <workItem from="1678671483091" duration="1022000" />
+      <workItem from="1678757818922" duration="1770000" />
+      <workItem from="1678844965822" duration="2337000" />
+      <workItem from="1678931874920" duration="32000" />
+      <workItem from="1679368499949" duration="1235000" />
+      <workItem from="1679563424340" duration="3134000" />
+      <workItem from="1679622300809" duration="1450000" />
+      <workItem from="1679882130436" duration="579000" />
+      <workItem from="1679968982846" duration="589000" />
+      <workItem from="1680055284632" duration="1207000" />
+      <workItem from="1681114712391" duration="1335000" />
+      <workItem from="1681178582777" duration="1230000" />
+      <workItem from="1681263990058" duration="586000" />
+      <workItem from="1681350540596" duration="1602000" />
+      <workItem from="1681436526113" duration="1099000" />
+      <workItem from="1681695910622" duration="588000" />
+      <workItem from="1681782541938" duration="1186000" />
+      <workItem from="1681868991629" duration="2072000" />
+      <workItem from="1681955644633" duration="1160000" />
+      <workItem from="1682042456639" duration="586000" />
+      <workItem from="1682215343343" duration="586000" />
+      <workItem from="1682301870987" duration="579000" />
+      <workItem from="1682400988601" duration="590000" />
+      <workItem from="1682474399405" duration="582000" />
+      <workItem from="1683269717122" duration="1345000" />
+      <workItem from="1683873374534" duration="586000" />
+      <workItem from="1684236834654" duration="661000" />
+      <workItem from="1684287857376" duration="1094000" />
+      <workItem from="1684375004435" duration="2458000" />
+      <workItem from="1684460597737" duration="2487000" />
+      <workItem from="1684719790183" duration="591000" />
+      <workItem from="1684981647201" duration="3319000" />
+      <workItem from="1685065565158" duration="586000" />
+      <workItem from="1685409961259" duration="1211000" />
+      <workItem from="1685503313829" duration="606000" />
+      <workItem from="1685589149086" duration="2626000" />
+      <workItem from="1685930065060" duration="6202000" />
+      <workItem from="1686017166973" duration="594000" />
+      <workItem from="1686640131139" duration="1058000" />
+      <workItem from="1686712977947" duration="3766000" />
+      <workItem from="1686814739697" duration="7756000" />
+      <workItem from="1686880941758" duration="2243000" />
+      <workItem from="1687141731376" duration="583000" />
+      <workItem from="1687246293673" duration="585000" />
+      <workItem from="1687314005964" duration="1889000" />
+      <workItem from="1687659129602" duration="2375000" />
+      <workItem from="1687744323220" duration="6390000" />
+      <workItem from="1687786486309" duration="1187000" />
+      <workItem from="1687819503951" duration="511000" />
+      <workItem from="1687836052198" duration="580000" />
+      <workItem from="1687921670441" duration="15100000" />
+      <workItem from="1687959086995" duration="1161000" />
+      <workItem from="1688004793493" duration="1228000" />
+      <workItem from="1688465211295" duration="620000" />
+      <workItem from="1688523755920" duration="2752000" />
+      <workItem from="1688608043470" duration="863000" />
+      <workItem from="1690272266278" duration="851000" />
+      <workItem from="1690335423238" duration="1182000" />
+      <workItem from="1690422423978" duration="3852000" />
+      <workItem from="1690509072408" duration="3241000" />
+      <workItem from="1690628774617" duration="642000" />
+      <workItem from="1690714019984" duration="1187000" />
+      <workItem from="1690768277498" duration="1243000" />
+      <workItem from="1690854170204" duration="598000" />
+      <workItem from="1690894732061" duration="582000" />
+      <workItem from="1690935843947" duration="587000" />
+      <workItem from="1691028100444" duration="3132000" />
+      <workItem from="1691113167691" duration="588000" />
+      <workItem from="1691150205903" duration="593000" />
+      <workItem from="1691276371163" duration="589000" />
+      <workItem from="1691372498721" duration="3576000" />
+      <workItem from="1691403671310" duration="674000" />
+      <workItem from="1691718294101" duration="984000" />
+      <workItem from="1691820374564" duration="1181000" />
+      <workItem from="1691929478028" duration="588000" />
+      <workItem from="1691994950537" duration="27000" />
+      <workItem from="1700142008976" duration="1102000" />
+      <workItem from="1700143138964" duration="616000" />
+      <workItem from="1700143803580" duration="182000" />
+      <workItem from="1701180736162" duration="100000" />
+      <workItem from="1701180855833" duration="194000" />
+      <workItem from="1701181073721" duration="46000" />
+      <workItem from="1701181149016" duration="592000" />
+      <workItem from="1708607879423" duration="1228000" />
+      <workItem from="1709556312339" duration="693000" />
+      <workItem from="1710421305448" duration="2729000" />
+      <workItem from="1710665211741" duration="21897000" />
+      <workItem from="1711169010312" duration="1857000" />
+      <workItem from="1713004651494" duration="212000" />
+      <workItem from="1713004902539" duration="382000" />
+      <workItem from="1713005316138" duration="328000" />
+      <workItem from="1713571341946" duration="20657000" />
+      <workItem from="1714872741989" duration="9617000" />
+      <workItem from="1715068919647" duration="822000" />
+      <workItem from="1715153389453" duration="16796000" />
+      <workItem from="1715643987107" duration="2509000" />
+      <workItem from="1715831964361" duration="2094000" />
+      <workItem from="1716128561018" duration="589000" />
+      <workItem from="1716177067493" duration="1017000" />
+      <workItem from="1716210544042" duration="1188000" />
+      <workItem from="1716301524033" duration="589000" />
+      <workItem from="1716331541331" duration="1857000" />
+      <workItem from="1716763882168" duration="4238000" />
+      <workItem from="1716851087841" duration="610000" />
+      <workItem from="1716938724482" duration="1359000" />
+      <workItem from="1718989187446" duration="587000" />
+      <workItem from="1720269872510" duration="3016000" />
+      <workItem from="1720364932185" duration="3621000" />
+      <workItem from="1720703294248" duration="585000" />
+      <workItem from="1721086400904" duration="1183000" />
+      <workItem from="1721375046959" duration="1389000" />
+      <workItem from="1724400096499" duration="619000" />
+      <workItem from="1724402188163" duration="580000" />
+      <workItem from="1725430414530" duration="842000" />
+      <workItem from="1733900650009" duration="625000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交杨辉三角和二分查找">
       <created>1616114102845</created>
@@ -400,7 +712,105 @@
       <option name="project" value="LOCAL" />
       <updated>1660452166248</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="jvm-修改">
+      <created>1660452650943</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1660452650943</updated>
+    </task>
+    <task id="LOCAL-00013" summary="jvm-说明 沙箱安全机制和解决方案">
+      <created>1660453047095</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1660453047095</updated>
+    </task>
+    <task id="LOCAL-00014" summary="面试题排序bug">
+      <created>1686819902730</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1686819902730</updated>
+    </task>
+    <task id="LOCAL-00015" summary="编写一个Java函数，通过调用A.get()、B.get()、C.get()三个接口，获取三个整数，然后将这三个整数累加，最终返回累加的值。要求：&#10;1.调用三个接口的操作需要并行执行，以提高效率；&#10;2.累加操作需要在获取三个整数的操作完成后进行，因此需要保证三个整数均已获取后才能进行累加操作；&#10;3.考虑多线程安全问题。">
+      <created>1687937570728</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1687937570728</updated>
+    </task>
+    <task id="LOCAL-00016" summary="两链表相减； 这里涉及到了值传递和引用传递、链表反转等只是">
+      <created>1687946358218</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1687946358218</updated>
+    </task>
+    <task id="LOCAL-00017" summary="juc-01">
+      <created>1713881739779</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1713881739779</updated>
+    </task>
+    <task id="LOCAL-00018" summary="错误版本">
+      <created>1713887333668</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1713887333668</updated>
+    </task>
+    <task id="LOCAL-00019" summary="非常的无语，创建线程池代码放在循环里面了">
+      <created>1713888552230</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1713888552230</updated>
+    </task>
+    <task id="LOCAL-00020" summary="添加带超时的阻塞获取;&#10;添加注释">
+      <created>1713889370629</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1713889370629</updated>
+    </task>
+    <task id="LOCAL-00021" summary="注释">
+      <created>1713889393639</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1713889393639</updated>
+    </task>
+    <task id="LOCAL-00022" summary="带超时的阻塞添加">
+      <created>1714393984308</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1714393984308</updated>
+    </task>
+    <task id="LOCAL-00023" summary="拒绝策略添加">
+      <created>1714396030824</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1714396030824</updated>
+    </task>
+    <task id="LOCAL-00024" summary="拒绝策略添加2.0">
+      <created>1714397063863</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1714397063863</updated>
+    </task>
+    <task id="LOCAL-00025" summary="AQS-基础">
+      <created>1715155484137</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1715155484137</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,11 +844,48 @@
             </State>
           </value>
         </entry>
+        <entry key="600167f1-5cb4-4437-aa48-5ac69dc9cfdd">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="text">
+                    <value>
+                      <list>
+                        <option value="面试" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="600167f1-5cb4-4437-aa48-5ac69dc9cfdd" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
@@ -456,7 +903,21 @@
     <MESSAGE value="jvm-classLoader" />
     <MESSAGE value="jvm-实现自己的classLoder;继承classLoader类,重写findClass方法" />
     <MESSAGE value="jvm-打破双亲委派机制(因为机制的实现是loadClass方法,继承并重写即可)" />
-    <option name="LAST_COMMIT_MESSAGE" value="jvm-打破双亲委派机制(因为机制的实现是loadClass方法,继承并重写即可)" />
+    <MESSAGE value="jvm-修改" />
+    <MESSAGE value="jvm-说明 沙箱安全机制和解决方案" />
+    <MESSAGE value="面试题排序bug" />
+    <MESSAGE value="编写一个Java函数，通过调用A.get()、B.get()、C.get()三个接口，获取三个整数，然后将这三个整数累加，最终返回累加的值。要求：&#10;1.调用三个接口的操作需要并行执行，以提高效率；&#10;2.累加操作需要在获取三个整数的操作完成后进行，因此需要保证三个整数均已获取后才能进行累加操作；&#10;3.考虑多线程安全问题。" />
+    <MESSAGE value="两链表相减； 这里涉及到了值传递和引用传递、链表反转等只是" />
+    <MESSAGE value="juc-01" />
+    <MESSAGE value="错误版本" />
+    <MESSAGE value="非常的无语，创建线程池代码放在循环里面了" />
+    <MESSAGE value="添加带超时的阻塞获取;&#10;添加注释" />
+    <MESSAGE value="注释" />
+    <MESSAGE value="带超时的阻塞添加" />
+    <MESSAGE value="拒绝策略添加" />
+    <MESSAGE value="拒绝策略添加2.0" />
+    <MESSAGE value="AQS-基础" />
+    <option name="LAST_COMMIT_MESSAGE" value="AQS-基础" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -467,10 +928,49 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/maxProfit.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/streamTest/src/main/java/com/oywl/stream/StreamTest01.java</url>
+          <line>257</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring_test/src/main/java/com/oywl/SoapUtils.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/JUC/src/main/java/com/oy/test/aqs/TestAqs.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/util/concurrent/CountDownLatch.java</url>
+          <line>290</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
+          <line>1340</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/util/concurrent/CountDownLatch.java</url>
+          <line>230</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
+          <line>981</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_121/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
+          <line>995</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalMonitorStateException" package="java.lang" />
+          <option name="timeStamp" value="18" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>

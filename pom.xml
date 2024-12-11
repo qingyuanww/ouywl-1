@@ -8,6 +8,11 @@
         <module>spring_test</module>
         <module>ThreadTest</module>
         <module>JVMTest</module>
+        <module>streamTest</module>
+        <module>SPI</module>
+        <module>spi-demo</module>
+        <module>JUC</module>
+        <module>17-Test</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -87,6 +92,12 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.9</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>

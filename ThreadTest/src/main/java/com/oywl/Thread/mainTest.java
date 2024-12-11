@@ -2,10 +2,13 @@ package com.oywl.Thread;
 
 import ch.qos.logback.core.util.TimeUtil;
 
+import java.math.BigDecimal;
 import java.sql.Time;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.*;
 import java.util.concurrent.*;
+import java.util.stream.Collectors;
 
 /**
  * @description: https://blog.csdn.net/wangdong5678999/article/details/81837387
@@ -16,8 +19,25 @@ import java.util.concurrent.*;
 public class mainTest {
     public static SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SSS");
 
-    public static void main(String[] args) {
-        SimpleFuture();
+    public static void main(String[] args) throws ParseException {
+        System.out.println("yyyy-MM-dd 41:23:12".substring(11,16));
+//        SimpleFuture();
+//        System.out.println("LSJE36092FG1790002".length());
+        System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm").parse("2022-12-12 12:12"));
+        System.out.println(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
+        System.out.println(new SimpleDateFormat("HH:mm:ss").format(new Date()));
+
+        List<String> list = new ArrayList<>(Arrays.asList("90621007,90621008,90621010".split(",")));
+        Collections.addAll(list,"da");
+        System.out.println(86400000L/3600);
+        System.out.println(new Date().getTime()/1000);
+//        list.add("ss");
+
+        BigDecimal b1 = new BigDecimal("0.00");
+        BigDecimal b2 = new BigDecimal("0.00");
+        BigDecimal b3 = new BigDecimal("0.00");
+        BigDecimal b4 = new BigDecimal("0.00");
+        System.out.println(b1.add(b2).subtract(b3).subtract(b4));
     }
 
     private static void SimpleFuture() {

@@ -1,5 +1,7 @@
 package com.ouywl.牛客;
 
+import com.ouywl.牛客.entity.ListNode;
+
 import java.util.HashSet;
 
 /**

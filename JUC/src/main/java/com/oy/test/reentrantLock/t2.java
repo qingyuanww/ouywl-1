@@ -12,7 +12,7 @@ import java.util.concurrent.locks.ReentrantLock;
 @Slf4j
 public class t2 {
     public static void main(String[] args) {
-        公平锁();
+//        公平锁();
         /**
          * 0,1,2,3,4,
          * 0,1,2,3,4

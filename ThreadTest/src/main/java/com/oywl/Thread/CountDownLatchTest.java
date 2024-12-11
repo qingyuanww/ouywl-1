@@ -52,7 +52,7 @@ public class CountDownLatchTest {
         @Override
         public Object call() throws Exception {
             Random rand = new Random();
-            int randomNum = rand.nextInt((3000 - 1000) + 1) + 1000;//产生1000到3000之间的随机整数
+            int randomNum = rand.nextInt((3000 - 1000) + 1) + 1000000;//产生1000到3000之间的随机整数
             try {
                 Thread.sleep(randomNum);
                 System.out.println(Thread.currentThread().getName()+" 已经准备好了, 所使用的时间为 "+((double)randomNum/1000.0)+"s");
