@@ -4,72 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a50d76c-c341-4f6d-9810-9aaf97457d67" name="Default Changelist" comment="AQS-基础">
-      <change afterPath="$PROJECT_DIR$/17-Test/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-Test/src/main/java/Test_17.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17-Test/src/main/java/Test_18.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/future/FutureTest02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/tttt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/entity/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/面试/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/面试/MTTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/面试/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/面试/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/面试/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/面试/ShapeCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/面试/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/面试/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JUC/src/main/java/com/oy/test/reentrantLock/t5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM/impl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM/service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM2/OuoOfMemoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM2/StackOverFlowTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ThreadTest/src/main/java/com/oywl/Thread/OnlyMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activemq_demo/dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activemq_demo/sit.yml" afterDir="false" />
+    <list default="true" id="2a50d76c-c341-4f6d-9810-9aaf97457d67" name="Default Changelist" comment="一次性上传">
       <change afterPath="$PROJECT_DIR$/mt_interview/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mt_interview/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mt_interview/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mt_interview/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mt_interview/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mt_interview/src/main/java/com/example/mt_interview/MtInterviewApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mt_interview/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mt_interview/src/test/java/com/example/mt_interview/MtInterviewApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spi-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spi-demo/src/main/java/面试/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/streamTest/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/streamTest/src/main/java/com/oywl/stream/StreamTest01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/streamTest/src/main/java/com/oywl/stream/entity/DateGrouping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/streamTest/src/main/java/com/oywl/stream/entity/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/streamTest/src/main/java/com/oywl/stream/entity/TimeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021-3-19/2021-3-19.iml" beforeDir="false" afterPath="$PROJECT_DIR$/2021-3-19/2021-3-19.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/StreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/StreamTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/future/CompletableFutureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/future/CompletableFutureTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/ListNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/addTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/addTwoNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/linked_list_cycle_ii.java" beforeDir="false" afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/linked_list_cycle_ii.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/mergeTwoLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/mergeTwoLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/middle_of_the_linked_ist.java" beforeDir="false" afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/middle_of_the_linked_ist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/revert_linked_list.java" beforeDir="false" afterPath="$PROJECT_DIR$/2021-3-19/src/com/ouywl/牛客/revert_linked_list.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JUC/src/main/java/com/oy/test/aqs/TestAqs.java" beforeDir="false" afterPath="$PROJECT_DIR$/JUC/src/main/java/com/oy/test/aqs/TestAqs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JUC/src/main/java/com/oy/test/reentrantLock/t2.java" beforeDir="false" afterPath="$PROJECT_DIR$/JUC/src/main/java/com/oy/test/reentrantLock/t2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM/Math.java" beforeDir="false" afterPath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM/Math.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM/MyClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/JVMTest/src/main/java/com/oy/JVM/MyClassLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThreadTest/src/main/java/com/oywl/Thread/CountDownLatchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ThreadTest/src/main/java/com/oywl/Thread/CountDownLatchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThreadTest/src/main/java/com/oywl/Thread/mainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ThreadTest/src/main/java/com/oywl/Thread/mainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activemq_demo/activemq_demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/activemq_demo/activemq_demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2021-3-19/com/ouywl/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2021-3-19/com/ouywl/test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ouywl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ouywl.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_test/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_test/src/main/java/com/oywl/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_test/src/main/java/com/oywl/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_test/src/main/java/com/oywl/ms/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_test/src/main/java/com/oywl/ms/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +109,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.13947004" />
+    <property name="project.structure.side.proportion" value="0.19134992" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -633,7 +569,7 @@
       <workItem from="1724400096499" duration="619000" />
       <workItem from="1724402188163" duration="580000" />
       <workItem from="1725430414530" duration="842000" />
-      <workItem from="1733900650009" duration="625000" />
+      <workItem from="1733900650009" duration="972000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交杨辉三角和二分查找">
       <created>1616114102845</created>
@@ -810,7 +746,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715155484137</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="一次性上传">
+      <created>1733901813232</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1733901813232</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -892,7 +835,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="第一次提交杨辉三角和二分查找" />
     <MESSAGE value="第二次提交-单例模式的四种写法&#10;懒汉式；饿汉式；静态内部类；枚举" />
     <MESSAGE value="第三次提交-callable接口的实现" />
     <MESSAGE value="2021-4-23 activemq 目的地之队列--&gt;生产和消费" />
@@ -917,7 +859,8 @@
     <MESSAGE value="拒绝策略添加" />
     <MESSAGE value="拒绝策略添加2.0" />
     <MESSAGE value="AQS-基础" />
-    <option name="LAST_COMMIT_MESSAGE" value="AQS-基础" />
+    <MESSAGE value="一次性上传" />
+    <option name="LAST_COMMIT_MESSAGE" value="一次性上传" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

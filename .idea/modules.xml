@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/17-Test/17-Test.iml" filepath="$PROJECT_DIR$/17-Test/17-Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/2021-3-19/2021-3-19.iml" filepath="$PROJECT_DIR$/2021-3-19/2021-3-19.iml" />
       <module fileurl="file://$PROJECT_DIR$/JUC/JUC.iml" filepath="$PROJECT_DIR$/JUC/JUC.iml" />
       <module fileurl="file://$PROJECT_DIR$/JVMTest/JVMTest.iml" filepath="$PROJECT_DIR$/JVMTest/JVMTest.iml" />
